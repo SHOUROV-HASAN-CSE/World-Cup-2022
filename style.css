@@ -2,6 +2,7 @@
       Font Style 
 -------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /* Font Family */
 body{
   font-family: 'Poppins', sans-serif;
@@ -14,26 +15,24 @@ body{
   background-color:#161616;
   color: #fff;
   border-radius: 30px;
-  height: 646px;
+  height: 600px;
   margin: 0 120px;
 }
 .banner{
-  display: flex;
-  
+  display: flex; 
 }
 .banner-header{
-  padding: 60px 10px 0 80px;
+  padding: 50px 10px 0 80px;
   height: 424px;
   width: 531px;
 }
 .banner-header h1{
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 700;
   Line-height:80px
 }
 .banner-header p{
-  font-size: 15px;
-  font-weight: 200;
+  font-size: 18px;
   margin-top: -25px;
   margin-bottom: 50px;
 }
@@ -41,15 +40,14 @@ body{
   text-decoration: none;
   background-color: #DD0000;
   color: #fff;
-  padding: 16px 25px;
+  padding: 15px 25px;
   border-radius: 5px;
 }
 .fa-angle-right{
   padding-left: 20px;
 }
 .banner-image img{
-  border-radius: 10px;
-  margin-top: 160px;
+  margin-top: 115px;
 }
 /*---------------------------
  Main Article Style
@@ -265,5 +263,25 @@ body{
   border-radius: 5px;
 }
 
-
 }
+
+
+/*-------------------------
+ Mobile Section Responsive  
+ --------------------------*/
+
+ @media only screen and (max-width:687px) {
+  
+  .top-banner{
+    height: auto;
+    margin: 0 5px;
+  }
+  .banner{
+    flex-direction: column; 
+  }
+  .banner-header{
+    padding: 0;
+    height: 424px;
+    width: 100%;
+
+ }
