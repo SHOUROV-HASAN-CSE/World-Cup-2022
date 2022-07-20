@@ -115,6 +115,22 @@ body{
 
  footer{
    background-color: #161616;
-   height: 344px;
+   height: 244px;
    text-align: center;
+   padding-top: 80px;
  }
+ footer h1{
+   color: #fff;
+ }
+ hr{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ .footer-heading{
+   margin-top: 40px;
+ }
+.footer-heading a{
+  text-decoration: none;
+  color: #B9B9B9;
+  font-size: 16px;
+  padding: 15px;
+}
