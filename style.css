@@ -109,6 +109,19 @@ body{
 .banner-title h3{
   font-size: 15px;
 }
+.tablet-viewport{
+  margin-top: 50px;
+  text-align: center;
+  display: none;
+}
+
+.tablet-viewport a{
+  text-decoration: none;
+  background-color:#DD0000;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 5px;
+}
 /* -----------------------
  Footer Section Style 
  -------------------------*/
@@ -146,4 +159,3 @@ body{
 /*-----------------------
  Main Style The End 
  -------------------------*/
- 
