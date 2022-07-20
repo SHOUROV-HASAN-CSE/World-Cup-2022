@@ -39,7 +39,7 @@ body{
 }
 .banner-header a{
   text-decoration: none;
-  background-color: #DD0000;
+  background-color: #c50c4a;
   color: #fff;
   padding: 15px 25px;
   border-radius: 5px;
@@ -71,7 +71,7 @@ body{
 .sidebar{
   width: 400px;
   height: 300px;
-  background-color: #161616;
+  background-color: #2b2a2a;
   border-radius: 10px;
   padding: 10px 30px;
 }
@@ -92,7 +92,7 @@ body{
   color:#161616;
 }
 .red{
-  background-color: #DD0000;
+  background-color: #c50c4a;
   color: #fff;
 }
 
@@ -139,7 +139,7 @@ body{
 
 .tablet-viewport a{
   text-decoration: none;
-  background-color:#DD0000;
+  background-color:#c50c4a;
   color: #fff;
   padding: 13px 30px;
   border-radius: 5px;
@@ -149,7 +149,7 @@ body{
  -------------------------*/
 
 footer{
-   background-color: #161616;
+   background-color: #2b2a2a;
    height: 300px;
    width: 100%;
    text-align: center;
@@ -316,7 +316,7 @@ hr{
   
   }
   .red{
-    background-color: #DD0000;
+    background-color:#c50c4a;
     color: #fff;
   }
   .article-section{
