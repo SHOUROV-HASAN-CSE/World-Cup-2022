@@ -64,13 +64,12 @@ body{
 }
 
 .article-container{
-  display: grid;
-  grid-template-columns:340px 1fr ;
+ display: flex;
 }
 
 
 .sidebar{
-  width: 280px;
+  width: 450px;
   height: 300px;
   background-color: #2b2a2a;
   border-radius: 10px;
@@ -104,34 +103,29 @@ body{
 .article-content{
   margin-left: 20px;
   margin-bottom: 20px;
+  border: 0.5px solid rgb(233, 231, 231);
+  border-radius: 5px;
+  padding: 20px;
+}
+.article-banner{
+  display: flex;
 }
 .article-banner img{
-  width: 100%;
+  width: 90%;
 }
 .banner-title{
   padding: 10px;
 }
-.banner-title a{
-  text-decoration: none;
-  border: 1px solid black;
-  color: #161616;
-  border-radius: 5px;
-  padding: 4px 17px;
-}
 .banner-title h3{
-  font-size: 15px;
+  font-size: 20px;
+  font-weight: 600;
 }
-.span{
-  display: flex;
-  align-items: center;
-  color: #464646;
+.banner-title h1{
+  font-size: 16px;
+  font-weight: 400;
+  color: #4D4D4D;
 }
-.span i{
-  padding-right: 8px;
-}
-.span-child{
-  padding-left:20px ;
-}
+
 .tablet-viewport{
   margin-top: 50px;
   text-align: center;
@@ -185,6 +179,98 @@ hr{
  -------------------------*/
 
 
+
+/*--------------------------
+ Responsive Section Start 
+ ---------------------------*/
+
+ @media only screen and (min-width: 995px) and (max-width: 1480px){
+   
+  .article-container{
+    display: grid;
+    grid-template-columns:340px 1fr ;
+  }
+  .sidebar{
+    width: 280px;
+    height: 300px;
+   
+  }
+ }
+
+ /*--------------------------
+   Tablet Responsive Style
+  ------------------------- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .top-banner{
+    margin: 0 18px;
+    width: 96% ;
+    height: 500px;
+  }
+  .banner{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns:1fr  1fr;
+  }
+  .banner-header{
+    padding: 8px 5px 0 30px;
+    height:auto;
+    width: 100%;
+  }
+  .banner-header h1{
+    font-size: 40px;
+    font-weight: 700;
+    Line-height:80px
+  }
+  .banner-header p{
+    font-size:20px;
+    font-weight: 0;
+    margin-bottom: 50px;
+  }
+  
+  .banner-image img{
+    height: 360px;
+    width: 355px;
+    margin-top: 130px;
+  }
+  .main-article{
+    margin: 10px 20px 0 0;
+  }
+  .article-container{
+    flex-direction: column;
+  }
+  .sidebar{
+    width: 90%;
+    height: 120px;
+    background-color: #fff;
+  }
+  .sidebar-child{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .textbar {
+    font-size: 20px;
+    font-weight: 500;
+  
+  }
+  .red{
+    background-color:#c50c4a;
+    color: #fff;
+  }
+  .article-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tablet-viewport{
+    margin-bottom: 50px;
+    display:block;
+  }
+
+  .footer-heading {
+    padding: 0 100px;
+  }
+
+}
 /*-------------------------
  Mobile Section Responsive  
  --------------------------*/
@@ -258,81 +344,6 @@ hr{
 }
 
 
- /*--------------------------
-   Tablet Responsive Style
-  ------------------------- */
-
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-
-  .top-banner{
-    margin: 0 18px;
-    width: 96% ;
-    height: 500px;
-  }
-  .banner{
-    padding: 20px 20px;
-    display: grid;
-    grid-template-columns:1fr  1fr;
-  }
-  .banner-header{
-    padding: 8px 5px 0 30px;
-    height:auto;
-    width: 100%;
-  }
-  .banner-header h1{
-    font-size: 40px;
-    font-weight: 700;
-    Line-height:80px
-  }
-  .banner-header p{
-    font-size:20px;
-    font-weight: 0;
-    margin-bottom: 50px;
-  }
-  
-  .banner-image img{
-    height: 360px;
-    width: 355px;
-    margin-top: 130px;
-  }
-  .main-article{
-    margin: 10px 20px 0 0;
-  }
-  .article-container{
-    flex-direction: column;
-  }
-  .sidebar{
-    width: 90%;
-    height: 120px;
-    background-color: #fff;
-  }
-  .sidebar-child{
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .textbar {
-    font-size: 20px;
-    font-weight: 500;
-  
-  }
-  .red{
-    background-color:#c50c4a;
-    color: #fff;
-  }
-  .article-section{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .tablet-viewport{
-    margin-bottom: 50px;
-    display:block;
-  }
-
-  .footer-heading {
-    padding: 0 100px;
-  }
-
-}
 
   /*------------------------
       THE END
