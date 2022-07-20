@@ -1,0 +1,344 @@
+/* ------------------
+      Font Style 
+-------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Font Family */
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* --------------------------
+    Banner Section Style
+--------------------------- */
+.top-banner{
+  background-color:#2b2a2a;
+  color: #fff;
+  border-radius: 30px;
+  height: 600px;
+  margin: 0 120px;
+}
+.banner{
+  display: flex; 
+}
+.banner-header{
+  padding: 50px 10px 0 80px;
+  height: 424px;
+  width: 531px;
+}
+.banner-header h1{
+  font-size: 60px;
+  font-weight: 700;
+  Line-height:80px
+}
+.banner-header p{
+  font-size: 18px;
+  margin-top: -25px;
+  margin-bottom: 50px;
+}
+.banner-header a{
+  text-decoration: none;
+  background-color: #c50c4a;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.fa-angle-right{
+  padding-left: 20px;
+}
+.banner-image img{
+  margin-top: 115px;
+  transition: 1.5s ease-in-out ;
+}
+.banner:hover .banner-image img{
+  transform: rotate(360deg);
+  position: relative;
+}
+
+/*---------------------------
+ Main Article Style
+ ------------------------- */
+.main-article{
+  margin: 80px 120px;
+}
+
+.article-container{
+  display: flex;
+}
+
+
+.sidebar{
+  width: 400px;
+  height: 300px;
+  background-color: #2b2a2a;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.sidebar-child{
+  padding: 5px 10px;
+}
+.textbar {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 17px 0;
+  margin: 30px 0;
+}
+.textbar a{
+  text-decoration: none;
+  color:#161616;
+}
+.red{
+  background-color: #c50c4a;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+.article-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.article-content{
+  border: 1px solid rgb(229, 230, 229);
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 50px 10px;
+  
+}
+.article-banner{
+  width: 100%;
+  display: flex;
+}
+.article-banner h3{
+  padding:0 10px;
+}
+.banner-title{
+  padding: 10px;
+  text-align: center;
+}
+.banner-title h3{
+  font-size: 18px;
+  font-weight: 600;
+}
+.banner-title h1{
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  color: #464646;
+}
+
+.tablet-viewport{
+  margin-top: 50px;
+  text-align: center;
+  display: none;
+}
+
+.tablet-viewport a{
+  text-decoration: none;
+  background-color:#c50c4a;
+  color: #fff;
+  padding: 13px 30px;
+  border-radius: 5px;
+}
+/* -----------------------
+ Footer Section Style 
+ -------------------------*/
+
+footer{
+   background-color: #2b2a2a;
+   height: 300px;
+   width: 100%;
+   text-align: center;
+   padding-top: 80px;
+}
+footer h1{
+   color: #fff;
+}
+hr{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-heading{
+   margin-top: 40px;
+}
+.footer-heading a{
+  text-decoration: none;
+  color: #B9B9B9;
+  font-size: 16px;
+  padding: 15px;
+}
+.footer-icon{
+  margin-top: 20px;
+  font-size: 35px;
+}
+.footer-icon i{
+  color:#fff;
+  padding: 2px;
+}
+
+/*-----------------------
+ Main Style The End 
+ -------------------------*/
+
+
+/*-------------------------
+ Mobile Section Responsive  
+ --------------------------*/
+
+@media only screen and (max-width:687px) {
+  
+  .top-banner{
+    height: auto;
+    margin: 0 5px;
+    padding: 0;
+  }
+  .banner{
+    flex-direction: column; 
+    text-align: center;
+  }
+  .banner-header{
+    padding: 0;
+    height: 424px;
+    width: 100%;
+  }
+  .banner-header h1{
+    font-size: 25px;
+    font-weight:700;
+    Line-height:43px;
+    padding: 10px 50px;
+  }
+  .banner-header p{
+    font-size: 14px;
+    line-height:24px;
+    padding:0 50px;
+  }
+  .banner-image img{
+    width: 100%;
+    margin-top:-150px;
+    margin-bottom:-20px;
+  }
+  .main-article{
+    margin:0;
+  }
+  .article-container{
+    flex-direction: column;
+  }
+  .sidebar{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+  }
+  .article-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .article-content{
+    margin:20px;
+  }
+  footer{
+    padding-top: 5px;
+    height: auto;
+    width: 100%;
+  }
+  .footer-heading a{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-icon{
+    margin-top:10px;
+    font-size: 40px;
+    padding-bottom: 30px;
+  }
+  .footer-icon i{
+    padding: 5px;
+  }
+}
+
+
+ /*--------------------------
+   Tablet Responsive Style
+  ------------------------- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+
+  .top-banner{
+    margin: 0 18px;
+    width: 96% ;
+    height: 500px;
+  }
+  .banner{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns:1fr  1fr;
+  }
+  .banner-header{
+    padding: 8px 5px 0 30px;
+    height:auto;
+    width: 100%;
+  }
+  .banner-header h1{
+    font-size: 40px;
+    font-weight: 700;
+    Line-height:80px
+  }
+  .banner-header p{
+    font-size:20px;
+    font-weight: 0;
+    margin-bottom: 50px;
+  }
+  
+  .banner-image img{
+    height: 360px;
+    width: 355px;
+    margin-top: 130px;
+  }
+  .main-article{
+    margin: 10px 20px 0 0;
+  }
+  .article-container{
+    flex-direction: column;
+  }
+  .sidebar{
+    width: 90%;
+    height: 120px;
+    background-color: #fff;
+  }
+  .sidebar-child{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .textbar {
+    font-size: 20px;
+    font-weight: 500;
+  
+  }
+  .red{
+    background-color:#c50c4a;
+    color: #fff;
+  }
+  .article-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tablet-viewport{
+    margin-bottom: 50px;
+    display:block;
+  }
+
+  .footer-heading {
+    padding: 0 100px;
+  }
+
+}
+
+  /*------------------------
+      THE END
+-------------------------- */
+
