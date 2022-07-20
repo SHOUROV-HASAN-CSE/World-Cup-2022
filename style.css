@@ -97,7 +97,9 @@ body{
 }
 .article-banner img{
   width: 100%;
-  margin-bottom: 15px;
+}
+.banner-title{
+  padding: 10px;
 }
 .banner-title a{
   text-decoration: none;
@@ -108,6 +110,17 @@ body{
 }
 .banner-title h3{
   font-size: 15px;
+}
+.span{
+  display: flex;
+  align-items: center;
+  color: #464646;
+}
+.span i{
+  padding-right: 8px;
+}
+.span-child{
+  padding-left:20px ;
 }
 .tablet-viewport{
   margin-top: 50px;
